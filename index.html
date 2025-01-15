@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BRS Garage - Araba Servisi ve Tamiri</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <!-- CSS Global -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- RTL (Sağdan sola) yapısı için: -->
+    <link href="assets/plugins/bootstrap/css/bootstrap-rtl.min.css" rel="stylesheet">
+    
+    <link href="assets/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="assets/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/plugins/prettyphoto/css/prettyPhoto.css" rel="stylesheet">
+    <link href="assets/plugins/owl-carousel2/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/plugins/owl-carousel2/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/plugins/animate/animate.min.css" rel="stylesheet">
+    <link href="assets/plugins/swiper/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/plugins/datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+    <!-- Tema CSS -->
+    <link href="assets/css/theme.css" rel="stylesheet">
+
+    <!-- Head Libs -->
+    <script src="assets/plugins/modernizr.custom.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <!-- 
+      Form alanlarında soldan sağa yazmak için
+      ek CSS (RTL'yi bozmayacak, sadece input'larda LTR olacak)
+    -->
+    <style>
+      .form-control {
+        direction: ltr !important;
+        text-align: left !important;
+      }
+    </style>
+
+    <!--[if lt IE 9]>
+    <script src="assets/plugins/iesupport/html5shiv.js"></script>
+    <script src="assets/plugins/iesupport/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="home" class="wide">
+
+<!-- PRELOADER -->
+<div id="preloader">
+    <div id="preloader-status">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+        <div id="preloader-title">Yükleniyor</div>
+    </div>
+</div>
+<!-- /PRELOADER -->
+
+<!-- WRAPPER -->
+<div class="wrapper">
+
+    <!-- HEADER -->
+    <header class="header fixed">
+        <div class="header-wrapper">
+            <div class="container">
+
+                <!-- Logo -->
+                <div class="logo">
+                    <!-- Buraya kendi logonuzu ekleyebilirsiniz -->
+                    <a href="#home"><img src="assets/img/BRSlogo.png" alt="BRS Garage" /></a>
+                </div>
+                <!-- /Logo -->
+
+                <!-- Mobil Menü Toggle -->
+                <a href="#" class="menu-toggle btn ripple-effect btn-theme-transparent">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <!-- /Mobil Menü Toggle -->
+
+                <!-- Navigation -->
+                <nav class="navigation closed clearfix">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!-- navigation menu -->
+                            <a href="#" class="menu-toggle-close btn"><i class="fa fa-times"></i></a>
+                            <ul class="nav sf-menu">
+                                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                                <li><a href="#hizmetler">Hizmetlerimiz</a></li>
+                                <li><a href="#calisma-saatleri">Çalışma Saatleri</a></li>
+                                <li><a href="#iletisim">İletişim</a></li>
+                                <li>
+                                    <ul class="social-icons">
+                                        <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <!-- /navigation menu -->
+                        </div>
+                    </div>
+                    <!-- Add Scroll Bar (Swiper) -->
+                    <div class="swiper-scrollbar"></div>
+                </nav>
+                <!-- /Navigation -->
+
+            </div>
+        </div>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- CONTENT AREA -->
+    <div class="content-area">
+
+<!-- =========================
+     SLIDER BÖLÜMÜ 
+========================= -->
+<section class="page-section no-padding slider">
+  <!-- Tam genişlik (Bootstrap kullanıyorsanız container-fluid da tercih edebilirsiniz) -->
+  <div class="container full-width">
+    
+    <!-- Owl Carousel Ana Slider Kapsayıcı -->
+    <div class="main-slider">
+      <!-- 
+        data-items, data-items-tablet, data-items-mobile gibi 
+        attribute’lar Owl Carousel'in farklı çözünürlükler için 
+        kaç slide göstereceğini belirler 
+      -->
+      <div 
+        class="owl-carousel" 
+        id="main-slider"
+        data-items="1"
+        data-items-desktop="1"
+        data-items-tablet="1"
+        data-items-mobile="1"
+        data-autoplay="true"
+        data-nav="true"
+        data-dots="true"
+      >
+
+        <!-- Slide 1 -->
+        <div class="item slide1 ver1">
+          <div class="caption">
+            <div class="container">
+              <div class="div-table">
+                <div class="div-cell">
+                  <div class="caption-content">
+                    <h2 class="caption-title">BRS GARAGE</h2>
+                    <h3 class="caption-subtitle">Profesyonel Araç Bakım ve Tamir Hizmetleri</h3>
+                    <p class="caption-text">
+                      Aracınızın ihtiyacı olan her türlü mekanik ve elektronik hizmeti tek çatı altında sunuyoruz.
+                    </p>
+                    <p class="caption-text">
+                      <a 
+                        class="btn btn-theme ripple-effect btn-theme-md" 
+                        href="#hizmetler"
+                      >
+                        Hizmetlerimize Göz Atın
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Slide 1 -->
+
+        <!-- Slide 2 -->
+        <div class="item slide2 ver1">
+          <div class="caption">
+            <div class="container">
+              <div class="div-table">
+                <div class="div-cell">
+                  <div class="caption-content">
+                    <h2 class="caption-subtitle">Araçlarınız Emin Ellerde!</h2>
+                    <p class="caption-text">
+                      Kaliteli işçilik, uygun fiyat politikası ve uzman kadromuzla hizmetinizdeyiz.
+                    </p>
+                    <p class="caption-text">
+                      <a 
+                        class="btn btn-theme ripple-effect btn-theme-md" 
+                        href="#iletisim"
+                      >
+                        Bize Ulaşın
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Slide 2 -->
+
+        <!-- Slide 3 -->
+        <div class="item slide3 ver1">
+          <div class="caption">
+            <div class="container">
+              <div class="div-table">
+                <div class="div-cell">
+                  <div class="caption-content">
+                    <h2 class="caption-title">Hemen İletişime Geçin</h2>
+                    <h3 class="caption-subtitle">Sorularınız mı var?</h3>
+                    <p class="caption-text">
+                      Aşağıdaki iletişim formunu doldurarak bize ulaşabilirsiniz. 
+                      Her türlü sorunuzu yanıtlamaktan memnuniyet duyarız.
+                    </p>
+                    <p class="caption-text">
+                      <a 
+                        class="btn btn-theme ripple-effect btn-theme-md" 
+                        href="#iletisim"
+                      >
+                        İletişim Formuna Git
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Slide 3 -->
+
+      </div>
+      <!-- /owl-carousel -->
+    </div>
+    <!-- /main-slider -->
+
+  </div>
+</section>
+<!-- /SLIDER BÖLÜMÜ -->
+
+        <!-- /SLIDER BÖLÜMÜ -->
+
+        <!-- HAKKIMIZDA -->
+        <section id="hakkimizda" class="page-section dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeft">
+                        <h2 class="section-title text-right" style="direction: ltr; unicode-bidi: bidi-override;">
+                            <small>Hakkımızda Daha Fazlası</small>
+                            <span>BRS Garage Kimdir?</span>
+                        </h2>
+                        <p>
+                            BRS Garage olarak, yıllardır araç tamiri ve bakımı alanında uzman ekibimizle hizmet veriyoruz. 
+                            Müşteri memnuniyetini ön planda tutarak, her marka ve model araca yönelik hızlı ve etkili çözümler sunmaktayız.
+                        </p>
+                        <p>
+                            Sahip olduğumuz geniş tecrübeyle, otomobilinizin mekanik ve elektronik ihtiyaçlarına %100 uyumlu çözümler geliştiriyor; 
+                            orijinal veya kaliteli yan sanayi parça seçenekleriyle her bütçeye uygun servis deneyimi sağlıyoruz.
+                        </p>
+                        <ul class="list-icons">
+                            <li><i class="fa fa-check-circle"></i> Uzman teknik ekip ve son teknoloji cihazlar</li>
+                            <li><i class="fa fa-check-circle"></i> Hızlı, güvenilir ve uygun fiyatlı hizmet anlayışı</li>
+                            <li><i class="fa fa-check-circle"></i> Yedek parça tedariki ve danışmanlık</li>
+                        </ul>
+                        <p class="btn-row">
+                            <a href="#hizmetler" class="btn btn-theme ripple-effect btn-theme-md">Hizmetlerimizi İnceleyin</a>
+                            <a href="#iletisim" class="btn btn-theme ripple-effect btn-theme-md btn-theme-transparent">Randevu Alın</a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 wow fadeInRight">
+                        <!-- Galeri -->
+                        <div class="owl-carousel img-carousel">
+                           
+                            <div class="item">
+                                <a href="assets/img/ornek1.jpg" data-gal="prettyPhoto">
+                                    <img class="img-responsive" src="assets/img/ornek1.jpg" alt="Galeriden örnek 3"/>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="assets/img/ornek2.jpg" data-gal="prettyPhoto">
+                                    <img class="img-responsive" src="assets/img/ornek2.jpg" alt="Galeriden örnek 3"/>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="assets/img/ornek4.jpg" data-gal="prettyPhoto">
+                                    <img class="img-responsive" src="assets/img/ornek4.jpg" alt="Galeriden örnek 3"/>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="assets/img/resim6.webp" data-gal="prettyPhoto">
+                                    <img class="img-responsive" src="assets/img/resim6.webp" alt="Galeriden örnek 1"/>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="assets/img/resim7.webp" data-gal="prettyPhoto">
+                                    <img class="img-responsive" src="assets/img/resim7.webp" alt="Galeriden örnek 2"/>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="assets/img/resim1.jpg" data-gal="prettyPhoto">
+                                    <img class="img-responsive" src="assets/img/resim1.jpg" alt="Galeriden örnek 3"/>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- /Galeri -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /HAKKIMIZDA -->
+
+        <!-- HİZMETLERİMİZ -->
+        <section id="hizmetler" class="page-section">
+            <div class="container">
+                <h2 class="section-title wow fadeInUp">
+                    <small>Aracınız İçin Aradığınız Her Şey</small>
+                    <span>Hizmetlerimiz</span>
+                </h2>
+
+                <p class="text-center" style="margin-bottom: 40px;">
+                    BRS Garage olarak otomobilinizin tüm bakım ve onarım işlerini tek çatı altında gerçekleştiriyoruz. 
+                    Sunduğumuz hizmetlerden bazılarını aşağıda inceleyebilirsiniz.
+                </p>
+
+                <div class="row">
+                    <!-- 1. Kart -->
+                    <div class="col-md-4 wow flipInY" data-wow-offset="70" data-wow-duration="1s">
+                        <div class="thumbnail thumbnail-featured no-border no-padding">
+                            <div class="media">
+                                <a class="media-link" href="#">
+                                    <div class="caption">
+                                        <div class="caption-wrapper div-table">
+                                        <div class="caption-inner div-cell">
+                                                <div class="caption-icon"><i class="fa fa-wrench"></i></div>
+                                                <h4 class="caption-title">Genel Bakım & Onarım</h4>
+                                                <div class="caption-text">
+                                                    Her marka aracın periyodik bakımı, yağ değişimi, filtre değişimleri ve genel tamiri.
+                                                </div>
+                                                <div class="buttons">
+                                                    <span class="btn btn-theme ripple-effect btn-theme-transparent">Detay</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="caption hovered">
+                                        <div class="caption-wrapper div-table">
+                                            <div class="caption-inner div-cell">
+                                                <div class="caption-icon"><i class="fa fa-wrench"></i></div>
+                                                <h4 class="caption-title">Genel Bakım & Onarım</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2. Kart -->
+                    <div class="col-md-4 wow flipInY" data-wow-offset="70" data-wow-duration="1s" data-wow-delay="200ms">
+                        <div class="thumbnail thumbnail-featured no-border no-padding">
+                            <div class="media">
+                                <a class="media-link" href="#">
+                                    <div class="caption">
+                                        <div class="caption-wrapper div-table">
+                                            <div class="caption-inner div-cell">
+                                                <div class="caption-icon"><i class="fa fa-gears"></i></div>
+                                                <h4 class="caption-title">DPF & Elektronik Çözümler</h4>
+                                                <div class="caption-text">
+                                                    DPF (Dizel Partikül Filtresi) sorunlarınız, profesyonel cihazlarla temizlik ve onarım.
+                                                    Ayrıca elektronik beyin (ECU) arızaları, sensör ve ünite arızaları için de detaylı çözüm.
+                                                </div>
+                                                <div class="buttons">
+                                                    <span class="btn btn-theme ripple-effect btn-theme-transparent">Detay</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="caption hovered">
+                                        <div class="caption-wrapper div-table">
+                                            <div class="caption-inner div-cell">
+                                                <div class="caption-icon"><i class="fa fa-gears"></i></div>
+                                                <h4 class="caption-title">DPF & Elektronik Çözümler</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3. Kart -->
+                    <div class="col-md-4 wow flipInY" data-wow-offset="70" data-wow-duration="1s" data-wow-delay="400ms">
+                        <div class="thumbnail thumbnail-featured no-border no-padding">
+                            <div class="media">
+                                <a class="media-link" href="#">
+                                    <div class="caption">
+                                        <div class="caption-wrapper div-table">
+                                            <div class="caption-inner div-cell">
+                                                <div class="caption-icon"><i class="fa fa-check-circle"></i></div>
+                                                <h4 class="caption-title">MFK Ön Kontrol</h4>
+                                                <div class="caption-text">
+                                                    İsviçre MFK muayenesine hazırlık, eksiksiz kontrol ve onarım hizmeti.
+                                                    Süreci hızlandırmak ve masrafları azaltmak için danışmanlık.
+                                                </div>
+                                                <div class="buttons">
+                                                    <span class="btn btn-theme ripple-effect btn-theme-transparent">Detay</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="caption hovered">
+                                        <div class="caption-wrapper div-table">
+                                            <div class="caption-inner div-cell">
+                                                <div class="caption-icon"><i class="fa fa-check-circle"></i></div>
+                                                <h4 class="caption-title">MFK Ön Kontrol</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- 4. Kart -->
+                    <div class="col-md-4 wow flipInY" data-wow-offset="70" data-wow-duration="1s">
+                        <div class="thumbnail thumbnail-featured no-border no-padding">
+                            <div class="media">
+                                <a class="media-link" href="#">
+                                    <div class="caption">
+                                        <div class="caption-wrapper div-table">
+                                            <div class="caption-inner div-cell">
+                                                <div class="caption-icon"><i class="fa fa-circle-o-notch"></i></div>
+                                                <h4 class="caption-title">Reifen (Lastik) Servisi</h4>
+                                                <div class="caption-text">
+                                                    Lastik değişimi, balans ayarı, lastik tamiri ve uygun şartlarda depolama hizmeti.
+                                                </div>
+                                                <div class="buttons">
+                                                    <span class="btn btn-theme ripple-effect btn-theme-transparent">Detay</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="caption hovered">
+                                        <div class="caption-wrapper div-table">
+                                            <div class="caption-inner div-cell">
+                                                <div class="caption-icon"><i class="fa fa-circle-o-notch"></i></div>
+                                                <h4 class="caption-title">Reifen Servisi</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5. Kart -->
+                    <div class="col-md-4 wow flipInY" data-wow-offset="70" data-wow-duration="1s" data-wow-delay="200ms">
+                        <div class="thumbnail thumbnail-featured no-border no-padding">
+                            <div class="media">
+                                <a class="media-link" href="#">
+                                    <div class="caption">
+                                        <div class="caption-wrapper div-table">
+                                            <div class="caption-inner div-cell">
+                                                <div class="caption-icon"><i class="fa fa-car"></i></div>
+                                                <h4 class="caption-title">Araç Alım & Satım</h4>
+                                                <div class="caption-text">
+                                                    İkinci el araç alım-satım danışmanlığı, ekspertiz ve değerleme hizmeti.
+                                                    Doğru aracı seçmek veya aracınızı değerinde satmak için yanınızdayız.
+                                                </div>
+                                                <div class="buttons">
+                                                    <span class="btn btn-theme ripple-effect btn-theme-transparent">Detay</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="caption hovered">
+                                        <div class="caption-wrapper div-table">
+                                            <div class="caption-inner div-cell">
+                                                <div class="caption-icon"><i class="fa fa-car"></i></div>
+                                                <h4 class="caption-title">Araç Alım & Satım</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6. Kart -->
+                    <div class="col-md-4 wow flipInY" data-wow-offset="70" data-wow-duration="1s" data-wow-delay="400ms">
+                        <div class="thumbnail thumbnail-featured no-border no-padding">
+                            <div class="media">
+                                <a class="media-link" href="#">
+                                    <div class="caption">
+                                        <div class="caption-wrapper div-table">
+                                            <div class="caption-inner div-cell">
+                                                <div class="caption-icon"><i class="fa fa-life-ring"></i></div>
+                                                <h4 class="caption-title">Acil Yol Yardımı</h4>
+                                                <div class="caption-text">
+                                                    Aniden yolda mı kaldınız? 7/24 acil yardım hattı ve çekici hizmeti (uygun koşullarda).
+                                                    En kısa sürede yanınızdayız.
+                                                </div>
+                                                <div class="buttons">
+                                                    <span class="btn btn-theme ripple-effect btn-theme-transparent">Detay</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="caption hovered">
+                                        <div class="caption-wrapper div-table">
+                                            <div class="caption-inner div-cell">
+                                                <div class="caption-icon"><i class="fa fa-life-ring"></i></div>
+                                                <h4 class="caption-title">Acil Yol Yardımı</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /HİZMETLERİMİZ -->
+
+        <!-- ÇALIŞMA SAATLERİ -->
+        <section id="calisma-saatleri" class="page-section image">
+            <div class="container">
+                <h2 class="section-title wow fadeInDown">
+                    <small>Ne Zaman Hizmet Veriyoruz?</small>
+                    <span>Çalışma Saatleri</span>
+                </h2>
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 wow fadeInDown">
+                        <div class="thumbnail thumbnail-counto no-border no-padding">
+                            <div class="caption">
+                                <div class="caption-icon"><i class="fa fa-clock-o"></i></div>
+                                <h4 class="caption-title">Pazartesi - Cuma</h4>
+                                <div class="caption-number" style="direction: ltr; unicode-bidi: bidi-override;">09:00 - 19:00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 wow fadeInDown">
+                        <div class="thumbnail thumbnail-counto no-border no-padding">
+                            <div class="caption">
+                                <div class="caption-icon"><i class="fa fa-clock-o"></i></div>
+                                <h4 class="caption-title">Cumartesi</h4>
+                                <div class="caption-number" style="direction: ltr; unicode-bidi: bidi-override;">10:00 - 18:00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 wow fadeInDown">
+                        <div class="thumbnail thumbnail-counto no-border no-padding">
+                            <div class="caption">
+                                <div class="caption-icon"><i class="fa fa-phone"></i></div>
+                                <h4 class="caption-title">Telefon</h4>
+                                <div class="caption-number" style="direction: ltr; unicode-bidi: bidi-override;">
+                                    076 384 15 44
+                                  </div>
+                                  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 wow fadeInDown">
+                        <div class="thumbnail thumbnail-counto no-border no-padding">
+                            <div class="caption">
+                                <div class="caption-icon"><i class="fa fa-envelope"></i></div>
+                                <h4 class="caption-title ">E-posta</h4>
+                                <div class="caption-number " style="direction: ltr; unicode-bidi: bidi-override;">service@brsgarage.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- /ÇALIŞMA SAATLERİ -->
+
+        <!-- HARİTA (GOOGLE MAP) -->
+        <section class="page-section no-padding no-bottom-space-off">
+            <div class="container full-width">
+                <div class="google-map">
+                    <!-- Örnek konum -->
+                    <div id="map-canvas" style="width: 100%; height: 400px;"></div>
+                </div>
+            </div>
+        </section>
+        <!-- /HARİTA -->
+
+        <!-- İLETİŞİM -->
+        <section id="iletisim" class="page-section contact dark">
+            <div class="container">
+                <!-- Başlık -->
+                <h2 class="section-title wow fadeInDown">
+                    <small>Bizimle iletişime geçmekten çekinmeyin!</small>
+                    <span>İletişim</span>
+                </h2>
+
+                <div class="row">
+                    <!-- Form Alanı -->
+                    <div class="col-md-6 wow fadeInLeft">
+                        <form 
+                          name="contact-form" 
+                          class="contact-form" 
+                          id="contact-form"
+                          onsubmit="return false;"  <!-- Formun normal gönderimini engelliyoruz -->
+                        >
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="outer required">
+                                        <div class="form-group af-inner has-icon">
+                                            <label class="sr-only" for="name">Ad Soyad</label>
+                                            <input
+                                                type="text"
+                                                name="name"
+                                                id="name"
+                                                placeholder="Ad Soyad"
+                                                size="30"
+                                                class="form-control placeholder"
+                                            />
+                                            <span class="form-control-icon"><i class="fa fa-user"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="outer required">
+                                        <div class="form-group af-inner has-icon">
+                                            <label class="sr-only" for="phone">Telefon</label>
+                                            <input
+                                                type="text"
+                                                name="phone"
+                                                id="phone"
+                                                placeholder="Telefon"
+                                                size="30"
+                                                class="form-control placeholder"
+                                            />
+                                            <span class="form-control-icon"><i class="fa fa-phone"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="outer required">
+                                <div class="form-group af-inner has-icon">
+                                    <label class="sr-only" for="subject">Konu</label>
+                                    <input
+                                        type="text"
+                                        name="subject"
+                                        id="subject"
+                                        placeholder="Konu"
+                                        size="30"
+                                        class="form-control placeholder"
+                                    />
+                                    <span class="form-control-icon"><i class="fa fa-bars"></i></span>
+                                </div>
+                            </div>
+                    
+                            <div class="form-group af-inner has-icon">
+                                <label class="sr-only" for="input-message">Mesajınız</label>
+                                <textarea
+                                    name="message"
+                                    id="input-message"
+                                    placeholder="Mesajınız"
+                                    rows="4"
+                                    cols="50"
+                                    class="form-control placeholder"
+                                ></textarea>
+                                <span class="form-control-icon"><i class="fa fa-pencil"></i></span>
+                            </div>
+                    
+                            <div class="outer required">
+                                <div class="form-group af-inner">
+                                    <!-- type="button" --> 
+                                    <button 
+                                      type="button" 
+                                      class="form-button form-button-submit btn btn-block btn-theme ripple-effect btn-theme-dark"
+                                      onclick="openMailClient();"
+                                    >
+                                      Gönder
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- /Form Alanı -->
+
+                    <!-- İletişim Bilgileri -->
+                    <div class="col-md-6 wow fadeInRight">
+                        <p>
+                            Her türlü soru, randevu veya bilgi talebiniz için bize ulaşın. Uzman ekibimiz size yardımcı olmaktan memnuniyet duyar.
+                        </p>
+
+                        <ul class="media-list contact-list">
+                            <li class="media">
+                                <div class="media-left"><i class="fa fa-map-marker"></i></div>
+                                <div class="media-body">Industriestrasse 168, 8957 Spreitenbach</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-left"><i class="fa fa-clock-o"></i></div>
+                                <div class="media-body style="direction: ltr; unicode-bidi: bidi-override;"">Pzt-Cuma: 09:00-19:00 | Cmt: 10:00-18:00</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-left"><i class="fa fa-phone"></i></div>
+                                <div class="media-body" style="direction: ltr; unicode-bidi: bidi-override;">076 384 15 44</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-left"><i class="fa fa-envelope"></i></div>
+                                <div class="media-body" style="direction: ltr; unicode-bidi: bidi-override;">service@brsgarage.com</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /İletişim Bilgileri -->
+                </div>
+            </div>
+        </section>
+        <!-- /İLETİŞİM -->
+    </div>
+    <!-- /CONTENT AREA -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-meta">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <p class="btn-row">
+                            <a href="#" class="btn btn-theme ripple-effect btn-icon-left facebook wow fadeInDown" data-wow-offset="20" data-wow-delay="100ms">
+                                <i class="fa fa-facebook"></i>FACEBOOK
+                            </a>
+                            <a href="#" class="btn btn-theme btn-icon-left ripple-effect twitter wow fadeInDown" data-wow-offset="20" data-wow-delay="200ms">
+                                <i class="fa fa-twitter"></i>TWITTER
+                            </a>
+                            <a href="#" class="btn btn-theme btn-icon-left ripple-effect pinterest wow fadeInDown" data-wow-offset="20" data-wow-delay="300ms">
+                                <i class="fa fa-pinterest"></i>PINTEREST
+                            </a>
+                            <a href="#" class="btn btn-theme btn-icon-left ripple-effect google wow fadeInDown" data-wow-offset="20" data-wow-delay="400ms">
+                                <i class="fa fa-google"></i>GOOGLE
+                            </a>
+                        </p>
+                        <div class="copyright">
+                            &copy; 2025 BRS Garage — Tüm Hakları Saklıdır. <br/>
+                            Industriestrasse 168, 8957 Spreitenbach | 076 384 15 44
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="to-top" class="to-top"><i class="fa fa-angle-up"></i></div>
+
+</div>
+
+<script src="assets/plugins/jquery/jquery-1.11.1.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="assets/plugins/superfish/js/superfish.min.js"></script>
+<script src="assets/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
+<script src="assets/plugins/owl-carousel2/owl.carousel.min.js"></script>
+<script src="assets/plugins/jquery.sticky.min.js"></script>
+<script src="assets/plugins/jquery.easing.min.js"></script>
+<script src="assets/plugins/jquery.smoothscroll.min.js"></script>
+<script src="assets/plugins/swiper/js/swiper.jquery.min.js"></script>
+<script src="assets/plugins/datetimepicker/js/moment-with-locales.min.js"></script>
+<script src="assets/plugins/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+<!-- Tema ile ilgili JS -->
+<script src="assets/js/theme-ajax-mail.js"></script>
+<script src="assets/js/theme.js"></script>
+
+<!-- Google Maps için gerekli JS -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcxdiKIe4WJn1ZDsuP-ii9zzUhdHj7v1o&callback=initialize"></script>
+<script>
+    function initialize() {
+        console.log("Harita initialize edildi");
+        
+        // Örnek koordinatlar
+        var konyaLatLng = new google.maps.LatLng(47.426323, 8.367025);
+        var istanbulLatLng = new google.maps.LatLng(47.426323, 8.367025);
+        
+        // Örnek merkez hesabı (koordinatları kendi ihtiyacınıza göre değiştirin)
+        var centerLat = (37.8751 + 41.0082) / 2;
+        var centerLng = (32.4924 + 28.9784) / 2;
+        var centerPoint = new google.maps.LatLng(centerLat, centerLng);
+        
+        var mapOptions = {
+            zoom: 6,
+            center: centerPoint
+        };
+        
+        var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    
+        // İsteğe göre marker eklenebilir
+        // var marker = new google.maps.Marker({
+        //     position: konyaLatLng,
+        //     map: map,
+        //     title: 'Konum'
+        // });
+    }
+</script>
+<script>
+    function openMailClient() {
+        // 1. Form alanlarındaki değerleri okuyalım
+        const name    = document.getElementById('name').value.trim();
+        const phone   = document.getElementById('phone').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+        const message = document.getElementById('input-message').value.trim();
+    
+        // 2. Alıcının adresi
+        const toAddress = "service@brsgarage.com";
+    
+        // 3. E-posta gövdesini (body) oluşturuyoruz
+        let body = "";
+        body += "Ad Soyad: " + name + "\n";
+        body += "Telefon: " + phone + "\n";
+        body += "--------------------------------\n\n";
+        body += message;
+    
+        // 4. mailto: linkini oluşturuyoruz
+        const mailtoLink = 
+          "mailto:" + toAddress 
+          + "?subject=" + encodeURIComponent(subject) 
+          + "&body=" + encodeURIComponent(body);
+    
+        // 5. Kullanıcının varsayılan mail istemcisini aç
+        window.location.href = mailtoLink;
+    }
+</script>
+
+</body>
+</html>
